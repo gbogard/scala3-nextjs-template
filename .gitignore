@@ -10,6 +10,9 @@ out
 
 # scala
 target
+.bsp
+.bloop
+.metals
 
 # production
 build

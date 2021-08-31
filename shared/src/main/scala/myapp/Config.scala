@@ -7,6 +7,6 @@ object Config:
     |This website is a next.js application, implemented in Scala 3, 
     |along with a purely-functional server running in the JVM!
     """.stripMargin,
-    "This text is shared between the React app and the server",
+    "This text is shared between the React app and the server. Edit it in shared/src/main/scala/myapp/Config.scala",
     "Enjoy that type-safe goodness!"
   )

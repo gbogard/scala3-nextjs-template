@@ -1,11 +1,9 @@
-import org.scalajs.linker.interface.{OutputPatterns, ModuleKind, ModuleSplitStyle}
-
-val scalaJsReactVersion = "2.0.0-RC3"
-
 ThisBuild / scalaVersion := "3.0.1"
 
 lazy val root = project
   .in(file("."))
+  .disablePlugins(RevolverPlugin)
+  .aggregate(front, server)
   .settings(
     name := "scala3-nextjs",
   )
@@ -17,29 +15,14 @@ lazy val shared = crossProject(JSPlatform, JVMPlatform)
   .jvmSettings()
   .jsSettings()
 
-lazy val backend = project
-  .in(file("backend"))
+lazy val server = project
+  .in(file("server"))
   .dependsOn(shared.jvm)
 
 lazy val front = project
   .in(file("front"))
-  .enablePlugins(ScalaJSPlugin)
-  .settings(
-    name := "scala3-nextjs",
-    scalacOptions += "-language:implicitConversions",
-    (Compile / fastLinkJS / scalaJSLinkerOutputDirectory) := target.value / "js",
-    (Compile / fullLinkJS / scalaJSLinkerOutputDirectory) := target.value / "js",
-    scalaJSLinkerConfig ~= {
-      // Enable ECMAScript module output.
-      _.withModuleKind(ModuleKind.CommonJSModule)
-      // Use .mjs extension.
-       .withModuleSplitStyle(ModuleSplitStyle.FewestModules)
-       .withSourceMap(false)
-    },
-    libraryDependencies ++= Seq(
-      "com.github.japgolly.scalajs-react" %%% "core" % scalaJsReactVersion
-    )
-  )
+  .enablePlugins(NextApp)
+  .disablePlugins(RevolverPlugin)
   .dependsOn(shared.js)
 
 
