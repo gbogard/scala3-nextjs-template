@@ -3,6 +3,7 @@ package myapp.pages
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 import myapp.Config
+import myapp.components.Counter
 import scala.scalajs.js.annotation.JSExportTopLevel
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSImport
@@ -17,7 +18,9 @@ val Homepage = ScalaComponent
     <.div(
       ^.className := styles("home"),
       <.h1(Config.title),
-      Config.description.map(text => <.p(text, ^.key := text)).toVdomArray
+      Config.description.map(text => <.p(text, ^.key := text)).toVdomArray,
+      <.hr,
+      Counter()
     )
   )
   .build
