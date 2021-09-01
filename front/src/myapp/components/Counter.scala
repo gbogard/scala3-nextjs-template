@@ -17,8 +17,10 @@ val Counter = ScalaFnComponent
   )
   .render((_, count) =>
     <.div(
+      ^.className := "flex items-center justify-between",
       <.p(s"You clicked ${count.value} times"),
       <.button(
+        ^.className := "bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 border rounded-full",
         ^.onClick --> count.modState(_ + 1),
         "Click me"
       )

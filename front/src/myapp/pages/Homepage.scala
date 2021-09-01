@@ -17,9 +17,11 @@ val Homepage = ScalaComponent
   .render_(
     <.div(
       ^.className := styles("home"),
-      <.h1(Config.title),
-      Config.description.map(text => <.p(text, ^.key := text)).toVdomArray,
-      <.hr,
+      <.h1(Config.title, ^.className := "font-serif"),
+      Config.description
+        .map(text => <.p(text, ^.key := text))
+        .toVdomArray,
+      <.hr(^.className := "my-4"),
       Counter()
     )
   )

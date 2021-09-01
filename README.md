@@ -1,11 +1,12 @@
 # Scala 3 / NextJS Starter
 
-This is a Scala 3 and Next.js template featuring:
+This is a Scala 3, Next.js and Tailwind template featuring:
 - a [next.js](https://nextjs.org/) web application using Scala 3 and 
 @japgolly's awesome [scalajs-react](https://github.com/japgolly/scalajs-react/)
+- Full Tailwind v2 configuration with autoprefixer, purge-css and cssnano
 - a `NextApp` sbt plugin that lets you add more Next.js sub-projects if you need them
 - a `server` sbt project for your server-side logic, preconfigured with sbt-revolver
-- a `shared` sbt project for sharing bits of code betwwen your next.js app and your back end 
+- a `shared` sbt project for sharing bits of code between your next.js app and your back end 
 (awesome for sharing [Tapir](https://tapir.softwaremill.com/en/latest/) endpoints for example)
 
 ## Setup
@@ -22,7 +23,8 @@ Alternatively, you can run it directly from sbt, from the root repository:
 sbt npmInstall
 ```
 
-This is provided as a convenience by the `NextApp` plugin. However, running external from appears to
+This is provided as a convenience by the `NextApp` plugin. 
+However, running external commands from sbt appears to
 be significantly slower than running them from a terminal, at least on my laptop :(
 
 ## Development

@@ -1,10 +1,9 @@
 html,
 body {
-  background: #ecf0f1;
+  @apply bg-gray-100;
+  @apply font-sans;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -14,4 +13,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  @apply text-4xl mb-1 mb-4;
+}
+
+h2 {
+  @apply text-3xl mb-1 mb-3;
+}
+
+p {
+  @apply leading-relaxed mt-1 mb-3;
 }

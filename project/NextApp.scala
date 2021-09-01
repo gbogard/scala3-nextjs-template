@@ -36,6 +36,7 @@ object NextApp extends AutoPlugin {
   import autoImport._
   override def projectSettings = Seq(
     scalacOptions += "-language:implicitConversions",
+    fork := true,
     Compile / fullLinkJS / scalaJSLinkerOutputDirectory := target.value / "js",
     Compile / fastLinkJS / scalaJSLinkerOutputDirectory := target.value / "js",
     Compile / scalaSource := baseDirectory.value / "src",
