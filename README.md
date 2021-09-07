@@ -94,7 +94,7 @@ To add a new page, you need to create a scalajs-react component somewhere in you
 for example like this:
 
 ```scala
-// Will export a "Component" value in the "target/js/Homepage.mjs" module
+// Will export a "Component" value in the "@scalajs/Homepage" module
 @JSExportTopLevel("Component", "Homepage")
 val HomePageJS = Homepage.toJsComponent.raw
 ```

@@ -1,1 +1,1 @@
-export {Homepage as default} from '../target/js/Homepage';
+export {Homepage as default} from '@scalajs/Homepage';
