@@ -13,6 +13,7 @@ target
 .bsp
 .bloop
 .metals
+metals.sbt
 
 # production
 build
