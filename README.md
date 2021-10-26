@@ -1,4 +1,7 @@
 # Scala 3 / NextJS Starter
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is a Scala 3, Next.js and Tailwind template featuring:
 - a [next.js](https://nextjs.org/) web application using Scala 3 and 
@@ -108,3 +111,23 @@ export {Component as default} from '../target/js/Homepage';
 Take a look at 
 [scalajs-react's documentation on interoperability](https://github.com/japgolly/scalajs-react/blob/master/doc/INTEROP.md) 
 for more info.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://guillaumebogard.dev"><img src="https://avatars.githubusercontent.com/u/8615241?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Guillaume Bogard</b></sub></a><br /><a href="https://github.com/gbogard/scala3-nextjs-template/commits?author=gbogard" title="Code">💻</a> <a href="https://github.com/gbogard/scala3-nextjs-template/commits?author=gbogard" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
