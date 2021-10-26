@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "gbogard",
+      "name": "Guillaume Bogard",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8615241?v=4",
+      "profile": "https://guillaumebogard.dev",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "scala3-nextjs-template",
+  "projectOwner": "gbogard",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
